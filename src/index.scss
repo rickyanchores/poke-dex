@@ -11,6 +11,15 @@
   font-family: Inter,sans-serif;
 }
 
-.App{
-  
-}
+
+ .Form, .PokeAttributes, .PokeDetails, .PokeImage{
+    border-radius: 1em;
+    padding: 1em;
+    background: 1e1e1e;
+ }
+
+ button{
+  background: red;
+  color: white;
+  font-family: monospace;
+ }
