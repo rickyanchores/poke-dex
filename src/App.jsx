@@ -11,7 +11,7 @@ const App = () => {
       <div className="PokeDex">
         <h1 className='title text-4xl font-bold font-mono'>Poke-dex</h1>
         <p>Poke API will be here soon</p>
-        <div className="container grid grid-cols-1 md:grid-cols-6 md:grid-rows-6 gap-4 p-4">
+        <div className="poke-container grid grid-cols-1 md:grid-cols-6 md:grid-rows-6 gap-4 p-4">
           <Form />
           <PokeImage />
           <PokeAttributes />
