@@ -5,21 +5,42 @@
 @import "../src/App.scss";
 
 
+//COLOR PALETTE
+
+$mainBg: black;
+$containerBg: rgb(8, 7, 12);
+$textColor: white;
+$buttonBg: red;
+$buttonText: #333;
+
+
 :root{
-  background: black;
-  color: white;
+  background: $mainBg;
+  color: $textColor;
   font-family: Inter,sans-serif;
 }
 
 
  .Form, .PokeAttributes, .PokeDetails, .PokeImage{
     border-radius: 1em;
+    border: 2px solid white;
     padding: 1em;
-    background: 1e1e1e;
+    background: $containerBg;
  }
 
  button{
-  background: red;
-  color: white;
+  background: $buttonBg;
   font-family: monospace;
+  padding: 1em;
+  margin: 1em;
+  border: 2px white solid;
+  border-radius: 1em;
+ }
+
+
+ input{
+  padding: 1em;
+  border-radius: 1em;
+  font-weight: bold;
+  color: $buttonText;
  }
