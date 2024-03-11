@@ -15,7 +15,9 @@ $buttonText: #333;
 
 
 :root{
-  background: $mainBg;
+  background-image: url("https://cdn.pixabay.com/photo/2020/09/19/14/47/pokeball-5584675_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: $textColor;
   font-family: Inter,sans-serif;
 }
@@ -25,7 +27,9 @@ $buttonText: #333;
     border-radius: 1em;
     border: 2px solid white;
     padding: 1em;
-    background: $containerBg;
+    // ADD BELOW GLASS EFFECT
+    background: transparent;       
+    backdrop-filter: blur(30px);   
  }
 
  button{
