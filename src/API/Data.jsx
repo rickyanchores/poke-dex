@@ -5,11 +5,12 @@ const Data = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      let url = 'https://pokeapi.co/api/v2/pokemon';
+      let url = 'https://pokeapi.co/api/v2/pokemon/';
       try {
         let res = await fetch(url);
         let data = await res.json();
         setPokemon(data.results);
+        console.log(data.results)
       } catch (err) {
         console.log('Something went wrong', err);
       }
