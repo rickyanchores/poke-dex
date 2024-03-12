@@ -1,5 +1,4 @@
 import React from 'react'
-import Data from '../../API/Data'
 
 const Form = () => {
 

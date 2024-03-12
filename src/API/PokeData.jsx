@@ -5,7 +5,8 @@ const PokeData = ({children}) => {
     const [pokeData,setPokeData] = useState();
 
     const fetchData = async () => {
-        let url = ""
+        let url = 'https://pokeapi.co/api/v2/pokemon/pikachu/'
+    
         try{
             let res = await axios.get(url)
             let data = res.data
