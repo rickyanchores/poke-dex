@@ -1,11 +1,14 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Form from './Components/Form/Form';
 import PokeImage from './Components/PokeImage/PokeImage';
 import PokeDetails from './Components/PokeDetails/PokeDetails';
 import PokeAttributes from './Components/PokeAttributes/PokeAttributes';
 
+
 const App = () => {
+
+  
+
   return (
     <div className='App flex items-center justify-center min-h-screen'>
       <div className="PokeDex">
@@ -13,13 +16,13 @@ const App = () => {
         <p>Poke API will be here soon</p>
         <div className="poke-container grid grid-cols-1 md:grid-cols-6 md:grid-rows-6 gap-4 p-4">
           <Form />
-          <PokeImage />
+          <PokeImage /> {/* Corrected interpolation */}
           <PokeAttributes />
           <PokeDetails />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default App;
